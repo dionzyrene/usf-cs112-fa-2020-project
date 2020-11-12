@@ -1,0 +1,79 @@
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+import java.util.Random;
+
+public class KNNModel extends Model{
+	private int k;
+	private int p1;
+	private int p2;
+	
+	private List<String> getRecordFromLine(String line) {
+		 List<String> values = new ArrayList<String>();
+		 try (Scanner rowScanner = new Scanner(line)) {
+		 rowScanner.useDelimiter(",");
+		 while (rowScanner.hasNext()) {
+		 values.add(rowScanner.next());
+		 }
+		 }
+		 return values;
+			
+		try (Scanner scanner = new Scanner(new File("titanic.csv"));) {
+		 while (scanner.hasNextLine()) {
+		List<String> records = getRecordFromLine(scanner.nextLine());
+		 }
+			 
+		 }
+		}
+	}
+	private void trainSet(){
+		List<DataPoint> = new ArrayList<DataPoint>();
+	}
+	
+	public void Value(int k, int p1, int p2){
+		this.k=k;
+		this.p1= p1;
+		this.p2=p2;
+	}
+	
+	public void settrainSet1(int val) {
+		p1=0;
+	}
+	
+	public void settrainSet2(int val) {
+		p2=0;
+	}
+	
+	private double getDistance(DataPoint p1, DataPoint p2) {
+		var diff = p2-p1;
+		return Math.sqrt(diff*diff);
+	
+	Object trainingData;
+	for (int i=0;i<trainingData.length;i++ ) {
+		   Object gettype;
+		if (gettype==trainingData) {
+			   int getlabel;
+			if (getlabel==0) {
+				DataPoint++;
+			}
+				   
+			   }
+	}
+
+	Java.utils.Arrays.sort(array, new java.util.Comparator<Double[]>() {
+		public int compare(Double[] a, Double [] b) {
+		return a[0].compareTo(b[0]);
+		}
+		});
+	}
+
+	
+	Random rand = new Random();
+	double randNum = rand.nextDouble();
+
+	if (randNum < 0.9) {
+		DataPoint="train";
+	} else {
+		DataPoint="test";
+	}
+	}}
